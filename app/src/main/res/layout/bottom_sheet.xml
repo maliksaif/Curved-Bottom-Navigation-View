@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/bottom_sheet_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:background="@color/white"
+    android:backgroundTint="@color/white"
+              android:orientation="vertical"
+              app:behavior_hideable="true"
+              app:behavior_peekHeight="0dp"
+              app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+                                       android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Output Delivered"
+                    android:textSize="20sp" />
+            <TextView
+                android:textColor="@color/colorAccent"
+
+                android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Welcome to Sudoware"
+                    android:textSize="20sp" />
+            <TextView
+                android:textColor="@color/colorAccent"
+
+                android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Enjoy what you do"
+                    android:textSize="18sp" />
+            <TextView
+                android:textColor="@color/colorAccent"
+
+                android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Follow us on LinkedIn."
+                    android:textSize="18sp" />
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/holo_orange_light"
+                android:textColor="@color/colorAccent"
+                    android:text="Join Us" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
